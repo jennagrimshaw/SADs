@@ -31,3 +31,19 @@ To do this step:
 - when complete, move keep5bedfiles.R and keep5bedfiles.sh back to scripts dir
 - move new bedfiles to bedfiles dir
 - move output file to output dir
+
+Step 2: Determine species richness (S) and total abundance (N) for each genome
+- This will take the processed bedfiles in the dir: bedfiles
+- It will use the specieslist.txt
+- It will calculate and store: genome abbrev, species richness, and total abundance
+- And add these to a text file: max.txt
+
+To do this step: 
+- Move maxSmaxN.R and maxSmaxN.sh from the scripts dir to the main dir
+- Create a text file called max.txt that is tab separated with columns: genome S N
+- sbatch maxSmaxN.sh
+- when complete, move maxSmaxN.R and maxSmaxN.sh back to the scripts dir
+- delete output file
+- Open max.txt and detemine the maximum S and the maximum N
+
+
